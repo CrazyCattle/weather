@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="325px" height="100px" viewBox="0 0 325 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask + Group + 我要报天气 + 寻找上海天气好声音</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="30.4334797%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F6738C" offset="0%"></stop>
+            <stop stop-color="#F8A491" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="325" height="100" rx="4"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#F3FBFF" offset="0%"></stop>
+            <stop stop-color="#E3F1FC" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="0" y="0" width="60" height="50" rx="6"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="0.25" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0.5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-9" cx="15" cy="15" r="15"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="0.25" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0.5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-12" cx="15" cy="15" r="11.25"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-14">
+            <stop stop-color="#3968A9" offset="0%"></stop>
+            <stop stop-color="#303E79" offset="49.8325893%"></stop>
+            <stop stop-color="#5A98A9" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-15">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-16">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我要拍天气-活动详情" transform="translate(-25.000000, -84.000000)">
+            <g id="Group-2" transform="translate(25.000000, 84.000000)">
+                <g id="Mask-+-Group-+-我要报天气-+-寻找上海天气好声音">
+                    <g id="Mask-+-Group">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <g id="Group" mask="url(#mask-3)" fill-opacity="0.2" opacity="0.6">
+                            <g transform="translate(-13.000000, 30.333333)" id="clouds">
+                                <g transform="translate(0.000000, -0.000000)">
+                                    <g transform="translate(0.870647, 0.000000)" fill="url(#linearGradient-4)">
+                                        <path d="M0.789820094,39.3138353 C0.789820094,39.3138353 9.42196358,37.874289 21.6269597,37.874289 C62.6676863,37.874289 100.914919,69.2429491 138.929158,69.2429491 C172.863219,69.2429491 210.064448,42.5369816 241.49806,43.694678 C274.574718,44.9128876 286.72556,57.6189082 313.322731,56.839828 C330.406323,56.339418 347.201,48.1277933 347.201,48.1277933 L347.201,195.404994 L1.70530257e-13,195.404994" id="Path-236"></path>
+                                        <path d="M0.923763147,47.017707 C36.7267104,54.7202699 52.1425788,16.8403912 117.116565,15.6189186 C160.412872,14.8049736 187.986815,34.7989648 226.275146,34.7989657 C266.764858,34.7989666 302.757141,11.0851578 324.543523,11.0851578 C334.724708,11.0851578 347.187222,15.6189186 347.187222,15.6189186 L347.187222,204.297382 L1.11149469,204.297382" id="Path-235"></path>
+                                        <path d="M0.923763147,16.6924381 C0.923763147,16.6924381 42.4208723,2.65775608 76.8252775,2.65775608 C111.229683,2.65775608 137.343632,11.8373663 163.71605,11.8373661 C190.088467,11.837366 208.520263,-1.54657934e-14 236.358604,-1.54657934e-14 C266.07585,-1.54657934e-14 308.303385,19.377312 347.778698,19.377312 C347.793258,26.2565893 347.778698,178.775835 347.778698,178.775835 L1.70178834,178.775835" id="Path-234"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="我要报天气-+-寻找上海天气好声音" transform="translate(140.000000, 30.000000)" fill="#FFFFFF">
+                        <text id="我要拍天气" font-family="PingFangSC-Semibold, PingFang SC" font-size="20" font-weight="500" letter-spacing="2.20000005">
+                            <tspan x="0" y="21">我要拍天</tspan>
+                            <tspan x="88.8000002" y="21">气</tspan>
+                        </text>
+                        <text id="镜头里的最美上海天气" font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal">
+                            <tspan x="0" y="40">镜头里的最美上海天气</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(43.000000, 28.000000)">
+                        <g id="Rectangle-104">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-6"></use>
+                        </g>
+                        <rect id="Rectangle-105" fill="#86BDEE" x="0" y="15" width="60" height="20"></rect>
+                        <g transform="translate(15.000000, 10.000000)">
+                            <g id="Oval-3">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                <use fill="#F7F8F9" fill-rule="evenodd" xlink:href="#path-9"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-9"></use>
+                            </g>
+                            <g id="Oval-4">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                                <use fill="#1E3667" fill-rule="evenodd" xlink:href="#path-12"></use>
+                            </g>
+                            <circle id="Oval-5" fill="url(#linearGradient-14)" cx="15" cy="15" r="7.5"></circle>
+                            <circle id="Oval-6" fill-opacity="0.5" fill="#1F325C" filter="url(#filter-15)" cx="15" cy="15" r="5"></circle>
+                            <circle id="Oval-6" fill-opacity="0.5" fill="#1F325C" filter="url(#filter-16)" cx="15" cy="15" r="5"></circle>
+                            <circle id="Oval-8" fill="#92B3D3" cx="15" cy="15" r="1.25"></circle>
+                            <circle id="Oval-8" fill="#628AB3" cx="15" cy="18.125" r="0.625"></circle>
+                        </g>
+                        <circle id="Oval-10" fill="#FF7878" cx="8.75" cy="7.5" r="2.5"></circle>
+                        <g id="Rectangle-109-+-Rectangle-106-+-Rectangle-106-+-Rectangle-106" transform="translate(45.000000, 3.750000)">
+                            <rect id="Rectangle-109" fill="#A6D1F6" x="0" y="0" width="7.5" height="7.5" rx="1"></rect>
+                            <g id="Rectangle-106-+-Rectangle-106-+-Rectangle-106" transform="translate(1.250000, 1.666667)" fill="#E2F2FF">
+                                <rect id="Rectangle-106" x="0" y="0" width="5" height="0.833333333" rx="0.416666667"></rect>
+                                <rect id="Rectangle-106" x="0" y="1.66666667" width="5" height="0.833333333" rx="0.416666667"></rect>
+                                <rect id="Rectangle-106" x="0" y="3.33333333" width="5" height="0.833333333" rx="0.416666667"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

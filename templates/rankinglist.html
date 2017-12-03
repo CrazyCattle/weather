@@ -1,0 +1,36 @@
+<div class="container rankp">
+  <div class="rank_head">
+    <div class="mypic"></div>
+    <h1>袁志丽</h1>
+    <div class="integral">
+      <div>
+        <h2>{{user_infor.user_rank}}</h2>
+        <p>当前名次</p>
+      </div>
+      <div>
+        <h2>1036</h2>
+        <p>总积分</p>
+      </div>
+      <div>
+        <h2>895</h2>
+        <p>可用积分</p>
+      </div>
+    </div>
+    <div class="shop_btn" ng-click="goto('store')">进入积分商城</div>
+  </div>
+  <div class="rank_list">
+    <div class="friends_list">
+      <h1 class="rank_title">志愿者榜单 Top 20</h1>
+      <a ui-sref="myfriendevc/{{rank.user_rank}}" ng-repeat="rank in ranks">
+        <div>
+          <img src="img/head1.png" alt="">
+        </div>
+        <div class="list-row">
+          <h3>{{rank.name}}</h3>
+          <p>总积分：<span>8765</span></p>
+        </div>
+        <div class="rank">No.{{rank.user_rank}}</div>
+      </a>
+    </div>
+  </div>
+</div>

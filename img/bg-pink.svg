@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="375px" height="350px" viewBox="0 0 375 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.81385784%" y1="8.84290894%" x2="92.6820191%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF7F98" offset="0%"></stop>
+            <stop stop-color="#FF7C77" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="record-play" transform="translate(0.000000, -317.000000)" fill="url(#linearGradient-1)">
+            <g id="Group" transform="translate(-107.000000, 317.000000)">
+                <g id="Group-2" transform="translate(107.000000, 0.000000)">
+                    <rect id="bg" x="0" y="0" width="375" height="350"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

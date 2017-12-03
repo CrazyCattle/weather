@@ -1,0 +1,101 @@
+<div class="container">
+  <!-- 首页天气banner区域 -->
+  <div class="aq_banner">
+    <div class="aqBgImg">
+      <!-- <img src="img/aq_bg.png" width=100% alt="" /> -->
+    </div>
+    <div class="aqBannerTitle">
+      <h1>{{aqiNow}}</h1>
+      <p>实况AQI指数 {{aqilevel}}</p>
+      <div>空气质量{{aqiScore}} 首要污染物为{{primaryPollutant}}</div>
+    </div>
+  </div>
+
+  <div class="aq_navlist">
+    <ul>
+      <li ng-style="{'color':tabMark=='{{tab.name}}'?colorTab:'','border-color':tab=='{{list.name}}'?colorTab:'','padding-bottom':tabMark=='{{tab.name}}'?'12px':'15px'}" ng-click="changeAreaTab(tab.name)" ng-class="{'lb':tabMark=='{{tab.name}}'}" ng-repeat="tab in areaTab">{{tab.tab}} <span>{{tab.num}}</span></li>
+    </ul>
+  </div>
+  <div class="aq_content">
+    <div class="aq_title">
+      <p>空气质量</p>
+      <p>{{lastestdata}} 发布</p>
+    </div>
+    <img id="canvas_svg" src="img/airquality/coordinate.svg"/>
+    <div class="canvas-div"  id="canvas-div">
+      <canvas id="aq-canvas">
+      </canvas>
+      <canvas id="aq-canvas-dashed">
+      </canvas>
+      <div class="datalist" id="datalist">
+        <div>
+          <p>{{nowTime[12]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[11]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[10]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[9]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[8]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[7]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[6]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[5]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[4]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[3]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[2]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[1]}}</p>
+        </div>
+        <div>
+          <p>{{nowTime[0]}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="aq_forecast">
+    <p>空气质量预报</p>
+    <table>
+      <tbody>
+        <tr class="aqlist_head">
+          <th class="width1">时段</th>
+          <th class="width2">AQI</th>
+          <th class="width3">空气质量等级</th>
+          <th class="width4">首要污染物</th>
+        </tr>
+        <tr ng-repeat="aqi in aqiForcast" class="aq_pt">
+          <td class="width1"><p>{{aqi.stamp}}</p><p>{{aqi.interval}}</p></td>
+          <td class="width2">{{aqi.aqi}}</td>
+          <td class="width3">
+            <div class = "{{aqi.class}}" ng-show = "aqi.part == 'single'">
+              <div>{{aqi.level}}</div>
+            </div>
+            <div class="double" ng-hide = "aqi.part == 'single'">
+              <div class={{aqi.class1}}>{{aqi.aqLeft}}</div>
+              <div class={{aqi.class2}}>{{aqi.aqRight}}</div>
+            </div>
+          </td>
+          <td class="width4">{{aqi.pripoll}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

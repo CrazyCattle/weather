@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="characterIndex-container">
+    <div class="characterIndex-row" ng-repeat="item in list">
+      <div class="characterIndex-leftIcon">
+        <i class="{{'circle'+item.number}} iconfont icon-white icon-{{item.icon}}"></i>
+      </div>
+      <div class="allIndex">{{item.name_prefix}}</div>
+      <div class="characterIndex-rightIcon">
+        <b ng-click="addbg(item.index_id)" id="{{item.notice}}" ng-class="{'iconfont1 icon1-selected bn':item.selected == true}"></b>
+      </div>
+    </div>
+  </div>
+  <div ng-click='showCharacter()' class="list_affirm">确认</div>
+  <div class="mask-bg"></div>
+  <div class="upper-limit">
+    <div class="limit-expression">
+      <img src="img/upperlimit.png" alt="">
+    </div>
+    <h1></h1>
+    <div class="submit-btn" ng-click="hideMask()">我知道了</div>
+  </div>
+</div>

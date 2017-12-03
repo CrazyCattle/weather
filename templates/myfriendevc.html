@@ -1,0 +1,72 @@
+<div style="height:100%;width:100%;background:#fff;">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div>
+          <img src="/img/myenv_t.png" alt="">
+          <div>
+            <div class="iconfont1 icon1-tempicon"></div>
+            <p>温度</p>
+            <h1 class="swiper-h1-ts1">25°</h1>
+          </div>
+          <div class="my-evc-chart">
+            <canvas id="canvas-temperature">
+            </canvas>
+            <canvas id="canvas-temperature-dashed">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+          <img width=100% src="/img/myenv_p.png" alt="">
+          <div>
+            <div class="iconfont1 icon1-pressure"></div>
+            <p>气压</p>
+            <h1 class="swiper-h1-ts2">1213</h1>
+          </div>
+          <div class="my-evc-chart">
+            <canvas id="canvas-pressure">
+            </canvas>
+            <canvas id="canvas-pressure-dashed">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+          <img width=100% src="/img/myenv_w.png" alt="">
+          <div>
+            <div class="iconfont1 icon1-wet"></div>
+            <p>湿度</p>
+            <h1 class="swiper-h1-ts3">124</h1>
+          </div>
+          <div class="my-evc-chart">
+            <canvas id="canvas-humidity">
+            </canvas>
+            <canvas id="canvas-humidity-dashed">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+          <img width=100% src="/img/myenv_l.png" alt="">
+          <div>
+            <div class="iconfont1 icon1-uv"></div>
+            <p>紫外线</p>
+            <h1 class="swiper-h1-ts4"><span>Lv </span>10</h1>
+          </div>
+          <div class="my-evc-chart">
+            <canvas id="canvas-uv">
+            </canvas>
+            <canvas id="canvas-uv-dashed">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-clickable"></div>
+    <p>最近更新： {{friendData.update}}</p>
+  </div>
+</div>

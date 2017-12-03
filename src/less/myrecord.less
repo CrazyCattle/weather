@@ -1,0 +1,93 @@
+.myrecord {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 30px;
+  &>.myrecord_pic{
+    width: 104px;
+    height: 104px;
+    margin: auto;
+    position: relative;
+
+    &>div {
+      margin-top:20px;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid #eee;
+      background: url(/img/head_pic.png) no-repeat center center;
+      &+p {
+        display: block;
+        height:32px;
+        width: 92px;
+        margin-left: 6px;
+        background: url(/img/head_pic_mask.png) no-repeat center center;
+      }
+    }
+    &>p {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      &:last-child {
+        width: 104px;
+        font-size: 16px;
+        color: #FF8098;
+        font-family: "Brandon Text";
+      }
+    }
+  }
+
+  &>.myrecord_date {
+    margin-top: 25px;
+    &>h3,&>p {
+      font-size: 14px;
+      color: #685E5E;
+      font-family: "PingFang SC";
+    }
+    &>p {
+      padding-top:6px;
+      font-size: 12px;
+      opacity: .6;
+    }
+  }
+
+  &>.myrecord_weather {
+    margin-top: 25px;
+    &>h3,&>h4  {
+      font-size: 16px;
+      font-family: "PingFang SC";
+      color: #FF8098;
+    }
+    &>h4 {
+      padding-top:6px;
+      font-family: "Brandon Text";
+    }
+  }
+
+  &>.myrecord_info {
+    margin-top: 25px;
+    &>div,&>p {
+      color: #FF8098;
+      font-family: "PingFang SC";
+      font-size: 12px;
+      opacity: .6;
+    }
+  }
+  .disco {
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden;
+  }
+  &>.record_nav {
+    padding-top: 30px;
+    margin: auto;
+    width: 60%;
+    overflow: hidden;
+    &>.record {
+      margin: auto;
+      height: 59px;
+      width: 58px;
+      background: url(/img/play.png) no-repeat center center;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<div class="container photograph">
+  <div class="photo-list">
+    <div class="nav-bar">
+      <ul>
+        <li><a ng-click="activate('near')" ng-class="{'active': isActive == 'near'}">附近</a></li>
+        <li><a ng-click="activate('now')" ng-class="{'active': isActive == 'now'}" >此刻</a></li>
+        <li class="lastLi"><a ng-click="activate('hot')" ng-class="{'active': isActive == 'hot'}">热门</a></li>
+        <li class="right">
+          <span class="iconfont icon-search" ng-click="searchLoc()"></span>
+          <span class="iconfont icon-iconinto" ng-click="jumpto()"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="noPhoto" ng-show="noPhotoes">
+      <p>附近没有天气实景照片</p>
+    </div>
+    <div class="photoes">
+      <div class="one-photo" ng-repeat="p in photoes" ng-click="showDetail($index)" ng-class="{mid: $index%3==1}" style="background-image:url({{p.url+'?w=320&h=320'}});"></div>
+    </div>
+    <div class="circle-button pink">
+      <div class="iconfont icon-camera icb" ng-click="takePhoto()"></div>
+    </div>
+  </div>
+
+
+
+  <div class="mask" ng-show="show" ng-click="hide()"></div>
+  <div class="photo-detail" ng-show="show">
+    <div class="photo" style="background-image: url({{detail.url + '?w=740&h=740'}});"></div>
+    <div class="detail">
+      <div class="avatar"><img src={{detail.avatar}}></div>
+      <div class="info">
+        <div class="name">{{detail.name}}</div>
+        <div class="location">{{detail.address}}</div>
+        <div class="bottom">
+          <div class="left"><span class="iconfont icon-time"></span><span>{{detail.time}}<span></div>
+          <div class="right">
+            <span class="view"><span class="iconfont icon-iconview"></span><span>{{detail.view_count}}</span></span>
+            <span class={{detail.likeclass}}><span class="iconfont icon-iconlike" ng-click="likeit()"></span><span>{{detail.recommend_count}}</span></span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+  <div style="height:100%;" ui-view></div>
+  <nav class="cef_nav" style="z-index: 100;" id="nav">
+    <a ui-sref="measure.env">
+      <div>
+        <div ng-style="{'color':clickNum=='1'?'#80879A':''}" class="my-menv Menv iconfont icon-tabenvironment"></div>
+        <div ng-style="{'color':clickNum=='1'?'#80879A':''}" class="my-menv">
+          我的环境
+        </div>
+      </div>
+    </a>
+
+    <a ui-sref="measure.mycity">
+      <div>
+        <div ng-style="{'color':clickNum=='2'?'#80879A':''}" class="my-city Mycity iconfont icon-tabcity"></div>
+        <div ng-style="{'color':clickNum=='2'?'#80879A':''}" class="my-city">我的城市</div>
+      </div>
+    </a>
+
+    <a ui-sref="measure.friend">
+      <div>
+        <div ng-style="{'color':clickNum=='3'?'#80879A':''}" class="my-fri Myfri iconfont icon-tabfriend"></div>
+        <div ng-style="{'color':clickNum=='3'?'#80879A':''}" class="my-fri">
+          我的好友
+        </div>
+      </div>
+    </a>
+
+    <a ui-sref="measure.activity">
+      <div>
+        <div ng-style="{'color':clickNum=='4'?'#80879A':''}" class="my-acti Aintro iconfont icon-tabintro"></div>
+        <div ng-style="{'color':clickNum=='4'?'#80879A':''}" class="my-acti">
+          活动详情
+        </div>
+      </div>
+    </a>
+  </nav>
+</div>

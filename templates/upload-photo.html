@@ -1,0 +1,32 @@
+<div class="container upload-photo">
+  <div class="photo" ng-style="{'background-image': 'url({{photoID}})'}"></div>
+  <div class="upload">
+    <div class="bar location"><i class="iconfont iconbig icon-location"></i>&nbsp;
+      <input ng-model="address" placeholder="您现在在哪里？" />
+    </div>
+    <div class="bar description"><i class="iconfont iconbig icon-write"></i>&nbsp;
+      <input ng-model="contents" placeholder="描述一下现在的天气吧" />
+    </div>
+    <div class="icons">
+      <div class="circle-container" ng-repeat="weather in weathers">
+        <div ng-class="{'circle-active':currentWeather==weather, 'circle-inactive':currentWeather!=weather}" ng-click="changeWeather(weather)">
+          <div class="icon-container"><i class="{{weather.icon}} icon-white"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="confirm-button" ng-if="!canSubmit">确认上传</div>
+  <div class="confirm-button pink" ng-if="canSubmit" ng-click="uploadPhotoNow()">确认上传</div>
+  <div class="mask" ng-show="show"></div>
+  <div class="modal uploadPhoto" ng-show="show">
+    <div class="photo-up" ng-if="status==1"></div>
+    <div class="photo-ups" ng-if="status==2"></div>
+    <div class="photo-upf" ng-if="status==3"></div>
+    <div ng-if="status==1">正在上传...</div>
+    <div ng-if="status==2">上传成功</div>
+    <div ng-if="status==3">上传失败</div>
+    <div class="confirm-button" ng-if="status==1" ng-click="cancel()">取消上传</div>
+    <div class="confirm-button pink" ng-if="status==2" ng-click="backToMain()">我知道了</div>
+    <div class="buttons" ng-if="status == 3"><span class="confirm-button small" ng-click="cancel()">取消</span><span class="confirm-button pink small" ng-click="uploadPhotoNow()">重新上传</span></div>
+  </div>
+</div>

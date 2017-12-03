@@ -1,0 +1,78 @@
+.container {
+  .padding {
+    width: 10px;
+    height: 40px;
+  }
+
+  .login_content {
+    flex: 1;
+    height: 40px;
+    border: 1px solid rgba(209,208,219,.5);
+  }
+
+  .login {
+    width: 100%;
+    height: 100%;
+    .login_phone {
+      p {
+        padding-left: 10px;
+        padding-top: 12px;
+        padding-bottom: 9px;
+        color: #858595;
+      }
+      .phone_container {
+        display: flex;
+      }
+    }
+    .login_password {
+      p {
+        padding-top: 13px;
+        padding-left: 10px;
+        padding-bottom: 9px;
+        color: #858595;
+      }
+      .pwd_container {
+        display: flex;
+      }
+    }
+  }
+
+  .forget_password {
+    padding-top: 12px;
+    padding-left: 10px;
+    &> a {
+      color: #D0CFDA;
+    }
+  }
+}
+#name, #pwd {
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+  box-shadow: none;
+  color: #666;
+  &:focus {
+    border: 1px solid rgba(209, 208, 219, 0.5);
+    outline: none;
+    box-shadow: none;
+  }
+}
+#login {
+  display: flex;
+  padding-top: 20px;
+  .padding {
+    width: 10px;
+    height: 41px;
+  }
+  #login_btn {
+    flex: 1;
+    height: 41px;
+    background-color: #F87C80;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 41px;
+    font-weight: 400;
+    border-radius: 5px;
+  }
+}

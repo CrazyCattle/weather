@@ -1,0 +1,5 @@
+<div class="input-bar">
+    <p class="pink-title" ng-if="change">{{title}}</p>
+    <input ng-focus="change = true" ng-blur="change = (value)? true : false"
+      ng-class="{clicked: change}" placeholder="{{change? NULL : title}}" ng-model="value">
+</div>

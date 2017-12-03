@@ -1,0 +1,28 @@
+<div class="container">
+  <form onsubmit="return false">
+    <div class="login">
+      <div class="login_phone">
+        <p>请输入您的手机号</p>
+        <div class="phone_container">
+          <div class="padding"></div>
+          <input type="text" class="login_content" ng-model="name" id="name">
+          <div class="padding"></div>
+        </div>
+      </div>
+      <div class="login_password">
+        <p>请输入密码</p>
+        <div class="pwd_container">
+          <div class="padding"></div>
+          <input type="password" class="login_content" ng-model="pwd" id="pwd">
+          <div class="padding"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="forget_password"><span></span><a>忘记密码？立即找回</a></div>
+  <div id="login">
+    <div class="padding"></div>
+    <div id="login_btn" ng-click="submit()">登录</div>
+    <div class="padding"></div>
+  </div>
+</div>

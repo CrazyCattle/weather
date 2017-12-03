@@ -1,0 +1,17 @@
+<div class="store">
+  <div ng-repeat='g in goods' class="one-item">
+    <div class="goods-pic">
+      <img class="moved-pic"  id="{{'good-pic-' + g.id}}" ng-src="{{g.photoUrl}}">
+      <img ng-show="g.show" ng-src="{{g.photoUrl}}">
+    </div>
+    <div class="goods-name">{{g.name}}</div>
+    <div class="goods-intro">{{g.detail}}</div>
+    <div class="bottom">
+      <span class="goods-cost">{{g.score}}</span>
+      <div class="iconfont icon-buttonadd icba" ng-click="addGoods(g)" ng-class="{'selected': g.selected}"></div>
+    </div>
+  </div>
+  <div class="circle-button pink" ng-click="checkOut()">
+    <div class="iconfont icon-buy icb"></div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container consume">
+  <div class="header">
+    <span>送货地址</span><span class="iconfont icon-bin" ng-click="delete()" ng-class="{'pink': canDelete3}"></span>
+  </div>
+  <div class="body info">
+    <div class="one-line input-box">
+      <input-bar title="姓名" class="name"></input-bar>
+      <input-bar title="手机号码" class="phone"></input-bar>
+    </div>
+    <div class="one-line input-box"><input-bar title="地址"></input-bar></div>
+    <div class="one-line input-box ottom"><input-bar title="留言（选填）"></input-bar></div>
+  </div>
+  <div class="header">
+    <span>兑换商品列表</span><span class="iconfont icon-bin"ng-click="delete2()"  ng-class="{'pink': canDelete2}"></span>
+  </div>
+  <div class="body shopping-list">
+    <div class="one-item" ng-repeat="g in goods">
+      <div class="pic"><img ng-src="{{g.photoUrl}}"></div>
+      <div class="item-info">
+        <div class="name">{{g.name}}</div>
+        <div class="cost"><span>兑换积分：</span>&nbsp;<span>{{g.cost}}</span></div>
+      </div>
+      <div class="modify">
+        <span ng-click="subtract($index)" class="operator" ng-disabled="canSubtract">－</span>
+        <span><input ng-model="g.num"></span>
+        <span ng-click="add($index)" class="operator" ng-disabled="canAdd">＋</span>
+      </div>
+    </div>
+    <div class="one-line bottom total-cost">
+      <div class="pink-point"><span>合计积分：</span><span>{{cost}}</span></div>
+      <div class="gray-point mid"><span>可用积分：</span><span>{{points}}</span></div>
+      <div class="gray-point"><span>剩余积分：</span><span>{{points-cost}}</span></div>
+    </div>
+  </div>
+  <div class="consume-button confirm-button pink" ng-click="consume()" ng-if="canSubmit">确认兑换</div>
+  <div class="consume-button confirm-button" ng-if="!canSubmit">确认兑换</div>
+  <div ng-if="status==1"></div>
+</div>

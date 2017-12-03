@@ -1,0 +1,37 @@
+<div class="container consume">
+  <div class="signup_progress">
+    <div>
+      <div class="signup_step1">填写信息</div>
+      <div class="signup_step2">上传录音</div>
+      <div class="signup_step3">审核发布</div>
+      <div class="circle_progress_1"></div>
+      <div class="circle_progress_2"></div>
+      <div class="circle_progress_3"></div>
+      <div class="circle_progress"></div>
+    </div>
+  </div>
+
+  <div class="body info" style="margin-top: 20px;">
+    <div class="one-line input-box">
+      <input-bar title="姓名" class="name"></input-bar>
+      <span class="line"></span>
+      <input-bar title="手机号码" class="phone"></input-bar>
+    </div>
+    <div class="one-line input-box">
+      <input-bar title="电子邮箱"></input-bar>
+    </div>
+    <div class="gender">
+      <div>性别</div>
+      <div>
+        <input type="radio" name="gender" value="0" ng-click="gender = 0" checked>男&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" value="1" ng-click="gender = 1">女&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+    <div class="one-line input-box bottom bb">
+      <input-bar title="简单介绍下自己(选填)"></input-bar>
+    </div>
+  </div>
+  <div class="consume-button confirm-button pink" ng-click="submit()" ng-if="canSubmit">我要报名</div>
+  <div class="consume-button confirm-button" ng-if="!canSubmit">我要报名</div>
+  <div id="siriwave" style="display:none"></div>
+</div>

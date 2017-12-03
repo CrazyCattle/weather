@@ -1,0 +1,38 @@
+<div class="container nextrain" style="background-color:#ffffff;">
+  <div class="nr-banner">
+    <div class="nextrain-info">
+      <p>距离下一场降水还有</p>
+      <h1>{{nextrain}}</h1>
+      <p>{{type}}</p>
+      <div class="location"><span class="iconfont icon-location"></span><span>{{address?address:'上海市'}}</span></div>
+    </div>
+    <div class="windmill"></div>
+    <div class="windmill-active"></div>
+    <div id="canvas">
+      <canvas id="raindrop"  style="height:100%;"></canvas>
+    </div>
+  </div>
+  <div class="curve">
+    <div class="forcast">{{forcast}}</div>
+    <div>
+      <div>
+        <div>大雨</div>
+        <div>中雨</div>
+        <div>小雨</div>
+        <div>无降水</div>
+      </div>
+      <div class="canvas-div">
+        <canvas id="nt-canvas">
+        </canvas>
+        <canvas id="nt-canvas-dashed">
+        </canvas>
+      </div>
+    </div>
+    <span>
+      <span>现在</span>
+      <span>30分钟</span>
+      <span>60分钟</span>
+      <span>90分钟</span>
+    </span>
+  </div>
+</div>

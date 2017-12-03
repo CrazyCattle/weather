@@ -1,0 +1,337 @@
+// circle{
+//     opacity: 0.3;
+// }
+
+@total: 3;
+@keyframes lightup {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg_svg {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FF7F98;
+  svg {
+    margin-top: 30%;
+  }
+}
+
+.main_broadcast {
+  position: absolute;
+  left: 5%;
+  top: 11%;
+  text-align: center;
+  width: 90%;
+
+  &>div:first-child {
+    width: 100%;
+    height: 335px;
+    position: relative;
+  }
+  // .loop(@index) when (@index < 3) {
+  //   .loop((@index+1));
+  //   .content_broadcast:nth-child(@index) {
+  //     z-index: 3 - @index;
+  //     margin-top: -@index*15px;
+  //     transform-origin: top;
+  //     transform: scale(1 - @index * .1);
+  //     opacity: 1 - @index * .1;
+  //   }
+  // }
+  .content_broadcast {
+    background-color: #fff;
+    z-index: 30;
+    width: 100%;
+    position: absolute;
+    border-radius: 8px;
+    height: 337px;
+    &>div:first-child {
+      width: 72px;
+      height: 72px;
+      padding: 2px;
+      border-radius: 50%;
+      background-color: white;
+      // position: absolute;
+      margin:-36px auto 20px;
+      img{
+        width: 68px;
+        height: 68px;
+        border: none;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+    &>p {
+      padding-top: 11px;
+      padding-bottom: 41px;
+      color: #BCAEAE;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &>h1,&>h2,&>h3 {
+      font-family: BrandonText-Medium;
+      font-size: 16px;
+      color: #685E5E;
+      font-weight: 500;
+      line-height: 22px;
+      margin: 0;
+      padding: 0;
+    }
+    &>h2 {
+      padding-bottom: 8px;
+    }
+    .fadein(@i,@j,@k) {
+        from {
+          transform: scale(@k) translate(0, (@j+15)*1px);
+          opacity: @i+.1;
+
+          // transform: perspective();
+        }
+        to {
+          transform: scale(@k+.1) translate(0, @j*1px);
+          opacity: @i+.2;
+        }
+    }
+
+
+    @keyframes animationC {.fadein(.6,30,.7);}
+    @keyframes animationB {.fadein(.7,15,.8);}
+    @keyframes animationA {.fadein(.8,0,.9);}
+    @keyframes animationS {
+      from{
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+        // transform: perspective();
+      }
+      to {
+        transform: scale(1.1) translate(0, -18px);
+        opacity: 0;
+      }
+    }
+    &.first {
+      z-index: 10;
+      transform-origin: bottom;
+      animation: animationA;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+    &.fadeOut{
+      animation: animationS;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+    &.second {
+      z-index: 9;
+      transform-origin: bottom;
+      animation: animationB;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+    &.third {
+      z-index: 8;
+      transform-origin: bottom;
+      animation: animationC;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+    .child-loop (@i) when (@i < 5) {
+      &:nth-child(@{i}) {
+        z-index: 11-@i;
+        transform-origin: bottom;
+        transform: scale(1-@i*0.1+.1) translate(0, 15*@i*1px-15*1px);
+        opacity: 1-@i*.1+.1;
+      }
+      .child-loop(@i + 1);
+    }
+    .child-loop(1);
+
+    .broadcast_progress {
+      padding-top: 10px;
+      width: 90%;
+      display: flex;
+      margin: auto;
+      &>div {
+        flex: 3;
+      }
+      .start_time,.end_time {
+        line-height: 50px;
+        flex: 1;
+        color: #AE9E9E;
+        font-size: 12px;
+      }
+      .progressbar {
+        height: 4px;
+        border-radius: 2px;
+        background-color: #eee;
+        margin-top: 22px;
+        position: relative;
+        .bar_mask {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 4px;
+          // 进度条 的进度为width的宽度
+          // width: 50%;
+          border-radius: 2px;
+          background-color: #FF8098;
+        }
+        .bar_ball {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          border-radius: 8px;
+          background-color: #fff;
+          top: -6px;
+          // 进度球所在的位置
+          // left: 50%;
+          margin-left: -8px;
+          border: 1px solid #eee;
+        }
+      }
+    }
+
+    .broadcast_controlbar {
+      display: flex;
+      width: 60%;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      vertical-align: middle;
+      &>div {
+        flex: 1;
+      }
+      .replay {
+        position: relative;
+        &>b {
+          position: absolute;
+          top: 15px;
+          left: 0;
+          font-size: 20px;
+          color: @lighterGray;
+        }
+      }
+      .love {
+        position: relative;
+        &>b {
+          position: absolute;
+          top: 15px;
+          right: 0;
+          font-size: 20px;
+          color: @lighterGray;
+          &.pink{
+            color: @buttonPink;
+          }
+        }
+        .love_num {
+          position: absolute;
+          top: 16px;
+          right: -30px;
+          font-size: 14px;
+          color: #AE9E9E;
+        }
+      }
+    }
+  }
+
+  .mask1,.mask2 {
+    width: 90%;
+    height: 325px;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 8px;
+    position: absolute;
+    top: 10%;
+    left:5%;
+    z-index: 20;
+  }
+  .mask2 {
+    width: 80%;
+    top: 13%;
+    left: 10%;
+    z-index: 10;
+  }
+
+  &>h1 {
+    color: #fff;
+    font-size: 16px;
+    font-family: BrandonText-Medium;
+    // font-weight: bold;
+    line-height: 16px;
+    margin-top: 16%;
+    margin-bottom: 3%;
+  }
+  &>p {
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    // font-weight: normal;
+    opacity: .6;
+  }
+
+}
+.nav_broadcast {
+  position: absolute;
+  bottom: 24px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0 30px;
+  &>div {
+    flex: 1;
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    &:nth-child(2){
+      color: #ffffff;
+    }
+  }
+  .selectedStyle {
+    color: #fff;
+  }
+  .iconfont{
+    font-size: 20px;
+    margin-bottom: 15px;
+    vertical-align: baseline;
+    &.icon-iconapplication{
+      font-size: 28px;
+      margin-bottom: 11px;
+      margin-top: -5px;
+    }
+  }
+}
+.playRecord {
+  .iconfont {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    background-color: #FF8098;
+    border-radius: 50px;
+    box-shadow: rgba(255,128,152,.5) 0 5px 4px;
+    &::before{
+      padding-left: 3px;
+    }
+    &.icon-21{
+      font-size: 18px;
+      &::before{
+        padding: 0;
+      }
+    }
+  }
+}

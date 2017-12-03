@@ -1,0 +1,254 @@
+@color5:#F77F7F; //生活指数等级颜色
+@color4:#F89BA4;
+@color3:#FFB6A9;
+@color2:#FFD28C;
+@color1:#C8DDF5;
+@activeColor:#F89BA4;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// *:before {
+//   display: table;
+//   content: ' ';
+// }
+// *:after {
+//   display: table;
+//   content: ' ';
+//   clear: both;
+// }
+
+.container {
+  width: 100%;
+  // overflow: hidden;
+  height: 100%;
+}
+.index-banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.buildings {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.tower {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+
+  &>img {
+    height: 288.65px;
+  }
+}
+
+.weather_info {
+  position: absolute;
+  font-family: 'PingFang SC';
+  color: #fff;
+  top: 25%;
+  left: 15%;
+  text-align: center;
+  text-shadow:rgba(231,103,127,.5) 0 2px 3px;
+  &>h3 {
+    font-size: 21px;
+    padding-bottom: 10px;
+  }
+  &>p {
+    font-size: 15px;
+  }
+  &>h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 54px;
+    font-family: 'Brandon Text';
+    text-shadow:rgba(231,103,127,.5) 0 3px 5px;
+  }
+}
+
+.weather_detail {
+  overflow: hidden;
+}
+.weather_detail_lf {
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: 'PingFang SC';
+  overflow: hidden;
+  &>div {
+    &>p {
+      font-size: 13px;
+      line-height: 18px;
+      color: #80879A;
+    }
+  }
+}
+
+.lf_data {
+  overflow: hidden;
+  padding-top:10px;
+  &>div:first-child {
+    float:left;
+    margin-right: 15px;
+    padding-top:15px;
+  }
+  &>div:last-child {
+    float: right;
+    color: #F89BA4;
+    position: relative;
+    &>h2 {
+      font-size: 36px;
+      font-weight: 700;
+      &>img {
+        position: absolute;
+        top: 6px;
+        right: 0;
+      }
+    }
+    &>p {
+      font-size: 15px;
+      white-space:nowrap;
+    }
+  }
+}
+
+.weather-detail_rt {
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+  &>div {
+    &>p {
+      font-size: 12px;
+      line-height: 18px;
+      color: #D6D9E3;
+      text-align: right;
+    }
+  }
+}
+
+.rt_data {
+  padding-top:10px;
+  &>table {
+    &>tbody>tr {
+       border-spacing: 0;
+       &>td {
+         font-size: 12px;
+         color: #80879A;
+         &:first-of-type {
+           text-align: right;
+         }
+       }
+    }
+  }
+}
+.life {
+  &>div {
+    p {
+      color: #858595;
+      font-size: 13px;
+    }
+    a {
+      color: #D6D9E3;
+      font-size: 12px;
+    }
+  }
+}
+
+.life {
+  padding-bottom: 25px;
+  padding-top: 15px;
+  &>div:first-child {
+    overflow: hidden;
+    padding-left: 6%;
+    padding-right: 6%;
+    p {
+      float: left;
+    }
+    a {
+      float: right;
+    }
+  }
+  &>.btn {
+    width:180px;
+    margin: auto;
+    &>button {
+      border-radius: 5px;
+      width:180px;
+      height: 41px;
+      border: 1px solid #F89BA4;
+      font-size: 14px;
+      color: #F89BA4;
+      background-color: #fff;
+    }
+  }
+}
+
+.list {
+  li {
+    display: flex;
+    width: 100%;
+    margin-top:15px;
+    &>div:first-child {
+      flex: 1;
+      text-align: center;
+    }
+    &>div:last-child {
+      flex: 3;
+      font-size: 14px;
+      h3 {
+        color: #80879A;
+      }
+      p {
+        color: #AAB4BF;
+        font-size: 12px;
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.color5 {
+  color: @color5;
+}
+.color4 {
+  color: @color4;
+}
+.color3 {
+  color: @color3;
+}
+.color2 {
+  color: @color2;
+}
+.color1 {
+  color: @color1;
+}
+
+.area_weather {
+  padding-top: 25px;
+  &>div:first-child>ul {
+    overflow: hidden;
+    margin-left:6%;
+    li {
+      float:left;
+      list-style: none;
+      margin-right:20px;
+      a {
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        color: #D6D9E3;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+.active {
+  color: @activeColor !important;
+  border-bottom: 2px solid @activeColor;
+}

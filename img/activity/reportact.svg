@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="325px" height="100px" viewBox="0 0 325 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask + Group + 我要报天气 + 寻找上海天气好声音</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="30.4334797%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F6738C" offset="0%"></stop>
+            <stop stop-color="#F8A491" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="325" height="100" rx="4"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FBFEFF" offset="0%"></stop>
+            <stop stop-color="#E3F1FC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M31.7117117,45.9202059 L33.5965543,45.9202059 C34.1445385,45.9202059 34.5945946,45.4740906 34.5945946,44.9237795 L34.5945946,33.9436594 C34.5945946,33.393792 34.1477567,32.9472329 33.5965543,32.9472329 L0.998040277,32.9472329 C0.450056115,32.9472329 0,33.3933483 0,33.9436594 L0,44.9237795 C0,45.4736468 0.446837852,45.9202059 0.998040277,45.9202059 L2.88288288,45.9202059 L2.88288288,61.5398158 C2.88288288,64.8654352 5.57292427,67.5418275 8.89125849,67.5418275 L25.7033361,67.5418275 C29.0254535,67.5418275 31.7117117,64.8546354 31.7117117,61.5398158 L31.7117117,45.9202059 Z" id="path-6"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="0.25" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0.5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="0" y="0" width="28.8288288" height="9.88416988"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我要报天气-活动详情" transform="translate(-25.000000, -84.000000)">
+            <g id="Group-2" transform="translate(25.000000, 84.000000)">
+                <g id="Mask-+-Group-+-我要报天气-+-寻找上海天气好声音">
+                    <g id="Mask-+-Group">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <g id="Group" mask="url(#mask-3)">
+                            <g transform="translate(-13.000000, 23.333333)">
+                                <g id="clouds" transform="translate(0.000000, 7.000000)" fill-opacity="0.2" opacity="0.6">
+                                    <g transform="translate(0.870647, 0.000000)" fill="url(#linearGradient-4)">
+                                        <path d="M0.789820094,39.3138353 C0.789820094,39.3138353 9.42196358,37.874289 21.6269597,37.874289 C62.6676863,37.874289 100.914919,69.2429491 138.929158,69.2429491 C172.863219,69.2429491 210.064448,42.5369816 241.49806,43.694678 C274.574718,44.9128876 286.72556,57.6189082 313.322731,56.839828 C330.406323,56.339418 347.201,48.1277933 347.201,48.1277933 L347.201,195.404994 L1.70530257e-13,195.404994" id="Path-236"></path>
+                                        <path d="M0.923763147,47.017707 C36.7267104,54.7202699 52.1425788,16.8403912 117.116565,15.6189186 C160.412872,14.8049736 187.986815,34.7989648 226.275146,34.7989657 C266.764858,34.7989666 302.757141,11.0851578 324.543523,11.0851578 C334.724708,11.0851578 347.187222,15.6189186 347.187222,15.6189186 L347.187222,204.297382 L1.11149469,204.297382" id="Path-235"></path>
+                                        <path d="M0.923763147,16.6924381 C0.923763147,16.6924381 42.4208723,2.65775608 76.8252775,2.65775608 C111.229683,2.65775608 137.343632,11.8373663 163.71605,11.8373661 C190.088467,11.837366 208.520263,-1.54657934e-14 236.358604,-1.54657934e-14 C266.07585,-1.54657934e-14 308.303385,19.377312 347.778698,19.377312 C347.793258,26.2565893 347.778698,178.775835 347.778698,178.775835 L1.70178834,178.775835" id="Path-234"></path>
+                                    </g>
+                                </g>
+                                <g id="Rectangle-139-+-Group" transform="translate(72.000000, -0.000000)">
+                                    <rect id="Rectangle-139" fill="#F2FBFF" x="12.972973" y="67.027027" width="8.64864865" height="12.972973"></rect>
+                                    <g id="Group" transform="translate(0.000000, 0.720721)">
+                                        <rect id="Rectangle-127" fill="#1E3667" x="2.47104247" y="0" width="29.6525097" height="42.007722" rx="6"></rect>
+                                        <g transform="translate(7.207207, 4.324324)" id="Oval-11" fill="#E3F1FC">
+                                            <ellipse cx="1.68168168" cy="1.68168168" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="7.28728729" cy="1.68168168" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="12.8928929" cy="1.68168168" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="18.4984985" cy="1.68168168" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="4.48448448" cy="7.28728729" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="10.0900901" cy="7.28728729" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="15.6956957" cy="7.28728729" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="1.68168168" cy="12.8928929" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="7.28728729" cy="12.8928929" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="12.8928929" cy="12.8928929" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="18.4984985" cy="12.8928929" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="4.48448448" cy="18.4984985" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="10.0900901" cy="18.4984985" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="15.6956957" cy="18.4984985" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="1.68168168" cy="24.1041041" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="7.28728729" cy="24.1041041" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="12.8928929" cy="24.1041041" rx="1.68168168" ry="1.68168168"></ellipse>
+                                            <ellipse cx="18.4984985" cy="24.1041041" rx="1.68168168" ry="1.68168168"></ellipse>
+                                        </g>
+                                        <g id="Rectangle-128">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                            <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-6"></use>
+                                        </g>
+                                        <g id="Rectangle-130" opacity="0.2" transform="translate(2.882883, 46.126126)">
+                                            <mask id="mask-10" fill="white">
+                                                <use xlink:href="#path-9"></use>
+                                            </mask>
+                                            <g id="Mask"></g>
+                                            <rect fill="#000000" filter="url(#filter-11)" mask="url(#mask-10)" x="0" y="-13.5907336" width="28.8288288" height="9.88416988"></rect>
+                                        </g>
+                                        <rect id="Rectangle-132" fill="#86BDEE" x="2.88288288" y="52.0978121" width="28.8288288" height="4.32432432"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="我要报天气" font-family="PingFangSC-Semibold, PingFang SC" font-size="20" font-weight="500" letter-spacing="1" fill="#FFFFFF">
+                        <tspan x="140" y="51">我要报天</tspan>
+                        <tspan x="224" y="51">气</tspan>
+                    </text>
+                    <text id="寻找上海天气好声音" font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" letter-spacing="0.699999988" fill="#FFFFFF">
+                        <tspan x="140" y="70">寻找上海天气好声</tspan>
+                        <tspan x="233.6" y="70">音</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

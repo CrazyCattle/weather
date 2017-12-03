@@ -1,0 +1,56 @@
+  <div  class="hw">
+  <div class="hw_search">
+    <div>
+      <div ng-click="activeMask = true; activeFilter = false;">
+        <div class="iconfont icon-search" ng-class="{'pink': (author? true:false)}"></div>
+        <div class="author">
+          <input type="text" name="author_name" ng-model="author" placeholder="检索作者" />
+        </div>
+      </div>
+    </div>
+    <div ng-click="activeMask = true; activeFilter = false;">
+      <div>
+        <div class="iconfont icon-calendar" ng-class="{'pink': (date? true:false)}"></div>
+        <div class="date">
+          <input type="date" name="date" ng-model="date" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="bar-right" ng-click="activeFilter = !activeFilter; activeMask = activeFilter;">
+          {{(sort ===1 && date !== null)? '时间排序' : '热度排序'}}&nbsp;&nbsp;
+        </div>
+        <div class="iconfont icon-iconarrow" ng-class="{'pink': activeFilter}"></div>
+      </div>
+    </div>
+  </div>
+  <div class="filter" ng-click="activeMask = false; activeFilter = false;" ng-show="activeFilter">
+    <div ng-click="filter(1);">时间排序</div>
+    <div ng-click="filter(2);">热度排序</div>
+  </div>
+  <!-- 遮罩层 -->
+  <div class="mask" ng-click="activeMask = false; activeFilter = false;"  ng-show="activeMask"></div>
+
+  <div class="hw_list">
+    <a ng-repeat="record in records">
+      <div>
+        <img ng-src="{{record.avatar}}">
+      </div>
+      <div>
+        <h3>{{record.name}}</h3>
+        <p>
+          <span>{{record.updated_at.slice(0,10)}}&nbsp;</span>
+          <span class="iconfont icon-iconlike" ng-click="like($index)" ng-class="{'pink': record.isLike}"></span>
+          <span class="love_num" ng-click="like($index)">{{record.recommend_count}}</span>
+        </p>
+      </div>
+      <div>
+        <audio id="audio-{{record.id}}" ng-src="{{record.audioUrl}}"></audio>
+        <div class="circle-button pink" ng-click="playAudio($index)"><div class="iconfont" ng-class="{'icon-play': !record.isPlay, 'icon-21':record.isPlay}"></div></div>
+        <p>{{record.duration}}</p>
+      </div>
+    </a>
+
+  </div>
+</div>

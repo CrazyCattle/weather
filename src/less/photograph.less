@@ -1,0 +1,212 @@
+.photograph{
+  .photo-list{
+    padding: 25px;
+    .noPhoto{
+      p{
+        color: @lightGray;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+    .nav-bar{
+      margin-bottom: 25px;
+      ul {
+        overflow: hidden;
+        .lastLi{
+          margin-right: 20px;
+        }
+        li {
+          float:left;
+          list-style: none;
+          margin-right: 50px;
+          a {
+            display: block;
+            text-decoration: none;
+            font-size: 12px;
+            color: #D6D9E3;
+            font-weight: 600;
+            padding-bottom: 20px;
+            &.active{
+              color: #80879A !important;
+              border-bottom: 2px solid #80879A;
+            }
+          }
+          &.right{
+            float: right;
+            margin: 0;
+            .iconfont{
+              color: #80879A;
+              font-size: 15px;
+              &:nth-child(2){
+                margin-left: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .photoes{
+      .one-photo{
+        display: inline-block;
+        width: 32%;
+        padding-top: 32%;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin-bottom: 2%;
+        vertical-align: text-top;
+        // height: calc()
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        &.mid{
+          margin: 0 2%;
+        }
+
+      }
+
+    }
+    .pink{
+      right: 20px;
+      bottom: 40px;
+      .icb{
+        margin-top: 14px;
+        font-size: 19px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+  // padding: 25px;
+
+  .mask{
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+  }
+  .photo-detail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    margin: 50px 24px 76px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+    box-shadow: 0 4px 4px 0 rgba(167,176,201,0.2);
+    .photo{
+      width: 100%;
+      padding-top: 100%;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+    .detail{
+      background-color: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      .avatar{
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        margin: -30px auto;
+        img{
+          border-radius: 50%;
+          margin: 2px;
+          width: 56px;
+          height: 56px;
+        }
+      }
+      .info{
+        margin-top: 40px;
+        text-align: center;
+        color: @lightGray;
+        font-size: 12px;
+        .name{
+          font-size: 15px;
+          color: @Gray;
+          margin-bottom: 6px;
+        }
+        .bottom{
+          position: absolute;
+          bottom: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding: 0 25px;
+          .left{
+            display: flex;
+            align-items: center;
+          }
+          .view{
+            display: flex;
+            padding-right: 15px;
+            align-items: center;
+          }
+          .icon-time{
+            font-size: 18px;
+          }
+          .right{
+            display: flex;
+            width: 30%;
+            .iconfont{
+              padding-right: 8px;
+            }
+            .liked{
+              display: flex;
+              align-items: center;
+              color: #FD8199;
+            }
+            .like{
+              display: flex;
+              align-items: center;
+            }
+          }
+          .icon-iconlike{
+            font-size: 16px;
+          }
+          .icon-iconview{
+            font-size: 18.9px;
+          }
+        }
+      }
+
+
+    }
+  }
+
+}
+
+.locationicon{
+  color: #FF8098;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -12px;
+}

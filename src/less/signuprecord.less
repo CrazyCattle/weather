@@ -1,0 +1,286 @@
+.signuprecord {
+  position: relative;
+  background-image: url('/img/bg-pink.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: @Gray;
+  .signup_progress {
+    position: absolute;
+    div.circle_progress {
+      left: 50%;
+      margin-left: -4px;
+    }
+    div.signup_step1 {
+      color: #D6D9E3;
+    }
+    div.signup_step2 {
+      color: #80879A;
+    }
+  }
+  .iconfont{
+    display: block;
+    margin: 13px auto;
+    color: @buttonPink;
+    &.icon-white{
+      margin: 10px auto;
+    }
+    &.icon-play{
+      margin-left: 4px;
+    }
+  }
+
+  .upload-record {
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,0.06);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .stop{
+      width: 14px;
+      height: 14px;
+      background-color: @buttonPink;
+      border-radius: 2px;
+    }
+  }
+  .play-voice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    bottom: 35px;
+    margin: 0 auto;
+    .mid{
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: white;
+      box-shadow: 0 5px 4px 0 rgba(0,0,0,0.06);
+      text-align: center;
+      .icon-21{
+        font-size: 16px;
+        margin: 17px;
+      }
+    }
+    .icon-bin, .icon-right{
+      width: 24px;
+      height: 24px;
+      font-size: 18px;
+      text-align: center;
+      color: white;
+    }
+  }
+  .tips{
+    position: relative;
+    top: 96px;
+    background-color: white;
+    margin: 0 6.67%;
+    // height: calc(~(310 +));
+    border-radius: 6px;
+    box-shadow: 0 0 8px 0 rgba(167,176,201,0.2);
+    padding: 35px 0 5px 25px;
+    @media (max-width: 330px) {
+      width: 280px;
+      height: 295px;
+    }
+    .title{
+      position: absolute;
+      top: -15px;
+      left: 25px;
+      width: 79px;
+      height: 31px;
+      background-color: @buttonPink;
+      border-radius: 5px;
+      box-shadow: 0 0px 8px 0 @buttonPink;
+      color: white;
+      font-size: 12px;
+      padding: 7px 15px;
+    }
+    .date{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: @Gray;
+      margin-right: 25px;
+
+    }
+    .top{
+      margin: 18px 0;
+      display: flex;
+      flex-direction: row;
+      margin-right: 25px;
+      justify-content: space-between;
+      div:first-child{
+        font-size: 13px;
+        div:first-child{
+          font-size: 20px;
+        }
+      }
+      .weathericon{
+        font-size: 40px;
+        color: @pink2;
+      }
+    }
+    .middle{
+      padding: 20px 0 14px;
+      border-top: 1px solid #EAECF1;
+      border-bottom: 1px solid #EAECF1;
+      div{
+        display: inline-block;
+        width: 45%;
+      }
+    }
+    .bottom{
+      padding: 20px 0;
+      overflow: scroll;
+      white-space: nowrap;
+      .index{
+        .circle{
+          margin-left: 0;
+          margin-right: 15px;
+        }
+        .icon-white {
+          text-align: center;
+          color: #FFFFFF;
+        }
+        display: inline-flex;
+        flex-direction: row;
+
+        margin-right: 15px;
+        img{
+          margin-right: 15px;
+        }
+        h3{
+          font-size: 13px;
+          color: #80879A;
+          margin: 6px 0;
+        }
+        p{
+          color: #AAB4BF;
+        }
+      }
+    }
+  }
+  .mask{
+    position: fixed;
+    z-index: 1;
+    background-color: #555353;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+  }
+  .modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    margin: 50px 24px 76px;
+    height: 480px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+    text-align: center;
+    .photo(@bg: url('/img/recordOK.svg')){
+      background-image: @bg;
+      margin: 60px;
+      width: 210px;
+      padding-top: 200px;
+    }
+    .photo-ready{
+      .photo;
+    }
+    .photo-up{
+      .photo(url('/img/uploading.svg'));
+    }
+    .photo-ups{
+      .photo(url('/img/uploadSuccess.svg'));
+    }
+    .photo-upf{
+      .photo(url('/img/uploadFail.svg'));
+    }
+    div{
+      font-size: 16px;
+      color: #4B60A4;
+    }
+    .voice-duration{
+      h3, p{
+        font-size: 16px;
+      }
+      h3{
+        color: @lightGray;
+      }
+      p{
+        color: #9299AA;
+      }
+    }
+    div{
+      color: #4B60A4;
+    }
+    .confirm-button {
+      position: absolute;
+      bottom: 55px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      color: white;
+      box-shadow: 0 4px 8px 0 fade(@lightGray, 50%);
+      &.pink{
+        box-shadow: 0 4px 8px 0 fade(@pink, 50%);
+      }
+    }
+    .buttons{
+      position: absolute;
+      bottom: 55px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 38px;
+      .confirm-button.small {
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        display: inline-block;
+        padding: 14px 20px;
+        margin: 0;
+        width: 120px;
+      }
+    }
+  }
+  #siriwave{
+    position: fixed;
+    bottom: 100px;
+    @media (max-width: 330px) {
+      bottom: 80px;
+    }
+  }
+}

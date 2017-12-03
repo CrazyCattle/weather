@@ -1,0 +1,145 @@
+.consume{
+  height: auto;
+  padding-bottom: 40px;
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 18px 12px;
+    color: #6c6c6c;
+    font-size: 13px;
+    .iconfont{
+      height: 19px;
+      width: 20px;
+      font-size: 14px;
+      line-height: 1.4em;
+      text-align: center;
+      &.pink{
+        color: @pink2;
+      }
+    }
+  }
+  .body{
+    background-color: white;
+    padding-left: 18px;
+    input{
+      border: none;
+      outline: none;
+      &::-webkit-input-placeholder {
+         color: @lighterGray;
+      }
+    }
+    .one-line{
+      position: relative;
+      padding: 23px 0 21px;
+      border-top: 1px solid @lineGray;
+      &.bottom{
+        border-bottom: 1px solid @lineGray;
+      }
+      .phone{
+        border-left: 1px solid #EBEDF2;
+        padding-left: 14px;
+        width: 100%;
+      }
+      .name{
+        width: 100%;
+      }
+      &.input-box{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+
+      }
+    }
+    &.shopping-list{
+      .one-item{
+        display: flex;
+        flex-direction: row;
+        padding: 18px;
+        padding-left: 0;
+        border-top: 1px solid @lineGray;
+        .pic{
+          width: 45px;
+          height: 45px;
+          margin-right: 18px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .item-info{
+          .name{
+            font-size: 15px;
+            color: #6c6c6c;
+          }
+          .cost{
+            font-size: 12px;
+            span:first-child{
+              color: @lighterGray;
+              font-size: 12px;
+            }
+            span:nth-child(2){
+              color: @pink2;
+            }
+          }
+        }
+        .modify{
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-right: -5px;
+          .operator{
+            color: @lighterGray;
+            font-size: 11px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          input{
+            width: 21px;
+            height: 21px;
+            border: 1px solid @lighterGray;
+            padding: 4px;
+            text-align: center;
+            border-radius: 4px;
+            margin: 0 5px;
+            box-shadow: none;
+          }
+        }
+      }
+      .total-cost{
+        display: flex;
+        flex-direction: column;
+        padding-right: 18px;
+        div{
+          margin-left: auto;
+          &.pink-point{
+            span{
+              font-size: 13px;
+            }
+            span:first-child{
+              color: #6c6c6c;
+            }
+            span:nth-child(2){
+              color: @pink2;
+            }
+          }
+          &.gray-point{
+            font-size: 12px;
+            color: @lighterGray;
+          }
+          &.mid{
+            padding: 7px 0;
+          }
+        }
+      }
+    }
+
+  }
+  .consume-button{
+    margin-top: 20px;
+  }
+}

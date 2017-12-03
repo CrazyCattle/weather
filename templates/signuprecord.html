@@ -1,0 +1,82 @@
+<div class="container consume signuprecord">
+  <!-- 上传 导航栏的进度条 -->
+  <div class="signup_progress">
+    <div>
+      <div class="signup_step1">填写信息</div>
+      <div class="signup_step2">上传录音</div>
+      <div class="signup_step3">审核发布</div>
+      <div class="circle_progress_1"></div>
+      <div class="circle_progress_2"></div>
+      <div class="circle_progress_3"></div>
+      <div class="circle_progress"></div>
+    </div>
+  </div>
+
+  <div class="tips">
+    <div class="title">内容提示</div>
+    <div class="date"  ng-if="showTips">
+      <span>{{tips.date}}</span>
+      <span>{{tips.chinesedate}}</span>
+    </div>
+    <div class="top"  ng-if="showTips">
+      <div>
+        <div>{{tips.tempL}}° － {{tips.tempU}}°</div>
+        <div>{{tips.info}}</div>
+      </div>
+      <div class="weathericon icon-{{tips.pic}}"></div>
+    </div>
+    <div class="middle"  ng-if="showTips">
+      <div>能见度: {{tips.visibility}}</div>
+      <div>气压: {{tips.pressure}}Hpa</div>
+      <div>{{tips.air_dir}}: {{tips.air_speed}} 级</div>
+      <div>湿度: {{tips.humi}}%</div>
+    </div>
+    <div class="bottom"  ng-if="showTips">
+      <div class="index" ng-repeat="i in index">
+        <div class="circle {{'circle'+i.number}}">
+          <div>
+            <i class="iconfont icon-white icon-{{i.icon}}"></i>
+          </div>
+        </div>
+        <div>
+          <h3>{{i.name}} <span class="{{'color'+i.number}}">{{i.level}}</span></h3>
+          <p>{{i.shortcues}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 录音 上传按钮 -->
+  <div class="upload-record" ng-if="recordStatus === 'ready'" ng-click="startRecord()">
+    <div class="iconfont icon-iconapplication"></div>
+  </div>
+  <div class="upload-record" ng-if="recordStatus === 'recording'" ng-click="stopRecord()">
+    <div class="stop"></div>
+  </div>
+  <div class="play-voice" ng-if="recordStatus === 'finish'" >
+    <div class="iconfont icon-bin" ng-click="deleteVoice()"></div>
+    <div class="mid" ng-if="!isPlay" ng-click="playVoice()"><div class="iconfont icon-play"></div></div>
+    <div class="mid" ng-if="isPlay" ng-click="pauseVoice()"><div class="iconfont icon-21"></div></div>
+    <div class="iconfont icon-right" ng-click="showModal()"></div>
+  </div>
+  <div class="mask" ng-show="show"></div>
+  <div class="modal uploadVoice" ng-show="show">
+    <div class="photo-ready" ng-if="status==0"></div>
+    <div class="photo-up" ng-if="status==1"></div>
+    <div class="photo-ups" ng-if="status==2"></div>
+    <div class="photo-upf" ng-if="status==3"></div>
+    <div class="voice-duration" ng-if="status==0">
+      <h3>录音时长</h3>
+      <p>{{duration}}</p>
+    </div>
+    <div ng-if="status==1">正在上传</div>
+    <div ng-if="status==2">上传成功</div>
+    <div ng-if="status==3">上传失败</div>
+    <div class="confirm-button pink" ng-if="status==0" ng-click="uploadVoice()">确认上传</div>
+    <div class="confirm-button" ng-if="status==1" ng-click="cancel()">取消上传</div>
+    <div class="confirm-button pink" ng-if="status==2" ng-click="hide()">我知道了</div>
+    <div class="buttons" ng-if="status == 3"><span class="confirm-button small" ng-click="cancel()">取消</span><span class="confirm-button pink small" ng-click="uploadVoice()">重新上传</span></div>
+  </div>
+  <div id="siriwave">
+  </div>
+</div>

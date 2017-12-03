@@ -1,0 +1,9 @@
+/dist/*
+!/dist/lib/
+!/dist/iconFont/
+.DS_Store
+node_modules/
+npm-debug.log.*
+npm-debug.log
+img/a.mp3
+.idea/
